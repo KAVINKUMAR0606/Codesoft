@@ -1,0 +1,320 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Pepita+Script&display=swap');
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Pepita Script', cursive;
+  background: #111;
+  color: #fff;
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: #000;
+  position: sticky;
+  top: 0;
+}
+
+header .logo {
+  font-size: 24px;
+  color: red;
+  font-family: 'Pepita Script', cursive;
+  font-weight: 700;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+}
+
+header nav ul li {
+  margin-left: 20px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Pepita Script', cursive;
+  font-weight: 400;
+  font-size: 15px;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: red;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 80px;
+  background: #111;
+}
+
+.hero-text {
+  max-width: 50%;
+}
+
+.hero-text h3 {
+  color: red;
+  font-family: 'Pepita Script', cursive;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  margin: 10px 0;
+  font-family: 'Pepita Script', cursive;
+  font-weight: 400;
+}
+
+.hero-text p {
+  margin-bottom: 20px;
+  font-family: 'Pepita Script', cursive;
+}
+
+.hero-img img {
+  width: 350px;
+  border-radius: 10px;
+}
+
+.btn {
+  display: inline-block;
+  background: red;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: 'Pepita Script', cursive;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #cc0000;
+}
+
+/* About Section */
+.about {
+  display: flex;
+  align-items: center;
+  padding: 60px 80px;
+  background: #1a1a1a;
+}
+.about h2{
+    color: red;
+}
+
+.about-img img {
+  width: 300px;
+  border-radius: 10px;
+  margin-right: 40px;
+}
+
+.skills span {
+  display: inline-block;
+  background: #222;
+  margin: 5px;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-family: 'Pepita Script', cursive;
+}
+
+/* Skills Section */
+.skills {
+  padding: 60px 80px;
+  text-align: center;
+  background: #111;
+}
+
+.skills h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: red;
+  font-family: 'Pepita Script', cursive;
+}
+
+.skills h3 {
+  margin-bottom: 40px;
+  color: #ccc;
+  font-family: 'Pepita Script', cursive;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+
+.skill-card {
+  background: #222;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.skill-card:hover {
+  transform: scale(1.05);
+  background: red;
+}
+
+.skill-card img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.skill-card p {
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  font-family: 'Pepita Script', cursive;
+}
+
+/* Projects Section */
+.projects {
+  padding: 60px 80px;
+  background: #1a1a1a;
+  text-align: center;
+}
+
+.projects h2 {
+  font-size: 32px;
+  color: red;
+  margin-bottom: 10px;
+  font-family: 'Pepita Script', cursive;
+}
+
+.projects h3 {
+  color: #ccc;
+  margin-bottom: 40px;
+  font-family: 'Pepita Script', cursive;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.project-card {
+  background: #222;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.project-info {
+  padding: 20px;
+}
+
+.project-info h4 {
+  margin-bottom: 10px;
+  color: white;
+  font-family: 'Pepita Script', cursive;
+}
+
+.project-info p {
+  color: #ddd;
+  font-size: 14px;
+  font-family: 'Pepita Script', cursive;
+}
+
+/* Resume Section */
+.resume {
+  padding: 60px 80px;
+  background: #1111;
+}
+
+.resume-content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.resume-content .left,
+.resume-content .right {
+  width: 45%;
+  font-family: 'Pepita Script', cursive;
+}
+
+/* Contact Section */
+.contact {
+  padding: 60px 80px;
+  text-align: center;
+  background: #1a1a1a;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin: auto;
+}
+
+.contact input, .contact textarea {
+  margin: 10px 0;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Pepita Script', cursive;
+}
+
+.contact button {
+  margin-top: 10px;
+  font-family: 'Pepita Script', cursive;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Footer */
+footer {
+  padding: 20px;
+  text-align: center;
+  background: #000;
+}
+
+footer .socials a {
+  margin: 0 15px;
+  color: red;
+  font-size: 24px;
+  transition: 0.3s;
+}
+
+footer .socials a:hover {
+  color: white;
+}
+
+footer p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #aaa;
+}
